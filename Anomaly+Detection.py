@@ -1,8 +1,9 @@
 
 # coding: utf-8
 
-# In[75]:
+# In[75]: 
 
+#Importing Libraries
 import pandas as pd
 import calendar
 import numpy as np
@@ -27,6 +28,7 @@ df['YEAR']=df[DateColumn].dt.year
 df['MONTH']=df[DateColumn].dt.month
 df['MONTH_NAME'] =df['MONTH'].apply(lambda x: calendar.month_abbr[x])
 df['WEEK']=df[DateColumn].dt.week
+# pass a list of different fields
 filterAttr = []
 
 
