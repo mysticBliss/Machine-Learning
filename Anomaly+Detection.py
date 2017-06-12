@@ -15,9 +15,9 @@ from IPython.display import display, HTML
 
 # Loading Data and working with Date Fields
 
-BaseLocation= 'C:\Users\staml\Desktop\Data Science\Learn\Chart-Interpretation\\'
+BaseLocation= 'C:\Learn\'
 
-df = pd.read_csv(BaseLocation + 'SENVION_DATA.csv',low_memory=False)
+df = pd.read_csv(BaseLocation + 'TICKET_DATA.csv',low_memory=False)
 
 DateColumn = 'TICKETSUBMITDATE'
 df[DateColumn]=pd.to_datetime(df[DateColumn])
